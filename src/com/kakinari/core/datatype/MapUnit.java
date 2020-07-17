@@ -110,7 +110,7 @@ public abstract class MapUnit<T extends BaseUnit<?>> extends BaseUnit<Map<Object
 			first = false;
 			sb.append(getLineBreak());
 			sb.append(getIndents());
-			sb.append(key).append(" :");
+			sb.append("\"").append(key).append("\" :");
 			sb.append(item.toJSONString(0, false));
 		}
 		setIndent(indent);

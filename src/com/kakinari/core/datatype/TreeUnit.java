@@ -149,7 +149,7 @@ public abstract class TreeUnit<T extends BaseUnit<?>> extends MapUnit<T>
 			first = false;
 			sb.append(getLineBreak());
 			sb.append(getIndents());
-			sb.append(key).append(" :");
+			sb.append("\"").append(key).append("\" :");
 			sb.append(item.toJSONString(0, false));
 		}
 		setIndent(indent);
